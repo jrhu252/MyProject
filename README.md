@@ -1,6 +1,6 @@
-# MyProject
+# MyGenome Project
 
-1. ds
+1. Processing raw data sheet
 ```bash
-   cd sequences;
+   example bash code
 ```
