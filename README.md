@@ -1,6 +1,6 @@
 # MyProject
 
-1. dsd
-***bash
+1. ds
+```bash
    cd sequences;
-***
+```
