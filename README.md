@@ -2,5 +2,5 @@
 
 1. Processing raw data sheet
 ```bash
-   example bash code
+   example bash 
 ```
