@@ -12,12 +12,12 @@
 ```bash
    fastqc Pr88168_1.fq.gz Pr88168_2.fq.gz
 ```
-<h2>Quality score for raw forward and reverse data</h2>
-
+<h2>Quality score for raw forward and reverse reads.</h2>
 <p float="middle">
    <img src="images/raw_forward_qual.png" width="450" height="350">
    <img src="images/raw_reverse_qual.png" width="450" height="350">
 </p>
+<h2>Adaptor content for raw forward and reverse reads.</h2>
 <p float="middle">
    <img src="images/raw_foward_adapt.png" width="450" height="350">
    <img src="images/raw_reverse_adapt.png" width="450" height="350">
