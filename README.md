@@ -14,9 +14,9 @@
 ```
 Results:
 
-4. Retrieve adpators.fasta file needed to trim adapater content.
+4. Retrieve adaptor file needed to trim adaptor content.
 ```bash
-   scp for adaptors
+   scp for adaptors.fasta
 ```
 5. Trim reads to address high adapter content using trimmomatic.
 ```bash
