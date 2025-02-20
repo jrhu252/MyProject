@@ -14,11 +14,14 @@
 ```
 Results:
 
-<img src="images/raw_forward_qual.png" width="400" height="400">
-<img src="images/raw_reverse_qual.png" width="400" height="400">
-<img src="images/raw_foward_adapt.png" width="400" height="400">
-<img src="images/raw_reverse_adapt.png" width="400" height="400">
-
+<p float="middle">
+   <img src="images/raw_forward_qual.png" width="400" height="400">
+   <img src="images/raw_reverse_qual.png" width="400" height="400">
+</p>
+<p float="middle">
+   <img src="images/raw_foward_adapt.png" width="400" height="400">
+   <img src="images/raw_reverse_adapt.png" width="400" height="400">
+</p>
 
 4. Retrieve adaptor file needed to trim adaptor content.
 ```bash
