@@ -18,6 +18,7 @@ Results:
    <img src="images/raw_forward_qual.png" width="450" height="350">
    <figcaption>Quality score for raw forward read data</figcaption>
    <img src="images/raw_reverse_qual.png" width="450" height="350">
+   <figcaption>Quality score for raw forward read data</figcaption>
 </p>
 <p float="middle">
    <img src="images/raw_foward_adapt.png" width="450" height="350">
