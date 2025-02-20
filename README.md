@@ -12,7 +12,7 @@
 ```bash
    fastqc Pr88168_1.fq.gz Pr88168_2.fq.gz
 ```
-Results:
+<h2>Quality score for raw forward and reverse data</h2>
 
 <p float="middle">
    <img src="images/raw_forward_qual.png" width="450" height="350">
