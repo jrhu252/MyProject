@@ -14,6 +14,8 @@
 ```
 Results:
 
+![alt text](images/raw_forward_qual.png)
+
 4. Retrieve adaptor file needed to trim adaptor content.
 ```bash
    scp for adaptors.fasta
