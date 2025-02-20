@@ -14,7 +14,7 @@
 ```
 Results:
 
-![alt text](images/raw_forward_qual.png)
+<img src="images/raw_forward_qual.png" width="200" height="200">
 
 4. Retrieve adaptor file needed to trim adaptor content.
 ```bash
