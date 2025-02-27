@@ -13,7 +13,7 @@
    fastqc Pr88168_1.fq.gz Pr88168_2.fq.gz
 ```
 <h2>Quality score for raw forward and reverse reads.</h2>
-<p float="middle">
+<p float="middle" style = "inline-block">
    <img src="images/raw_forward_qual.png" width="450" height="350">
    <img src="images/raw_reverse_qual.png" width="450" height="350">
 </p>
