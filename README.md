@@ -2,11 +2,11 @@
 
 1. Retrieve sequence reads for project.
 ```bash
-   scp bash
+   scp ngs lab 
 ```
 2. Initial count of total sequence reads in raw read data.
 ```bash
-   example bash 
+   
 ```
 3. Assess sequence quality of raw read data using FASTQC.
 ```bash
