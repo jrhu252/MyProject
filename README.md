@@ -1,5 +1,7 @@
 # MyGenome Project
 
+Will go through and fix steps with actual code
+
 1. Retrieve sequence reads for project.
 ```bash
    scp ngs lab 
