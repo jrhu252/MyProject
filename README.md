@@ -37,3 +37,10 @@ Will go through and fix steps with actual code
 ```bash
    fastqc Pr88168_paired_1.fq.gz Pr88168_paired_2.fq.gz
 ```
+
+?. Transfer trimmed Pr88168 paired reads to MCC.
+```bash
+   scp jrhu252@jrhu252.cs.uky.edu:MyGenome/Pr88168_paired_1.fq.gz .(MCC/jrhu252 Directory)
+   scp jrhu252@jrhu252.cs.uky.edu:MyGenome/Pr88168_paired_2.fq.gz .(MCC/jrhu252 Directory)
+```
+
