@@ -86,9 +86,12 @@ Luckily, my professor provided two perl scrips to make this process much easier 
    perl SeqLen.pl Pr88168_final.fasta
 ```
 
+3. Finally, I will use BUSCO to check for genome-completeness and see how well of an assembly we have made
 
-
-
+```bash
+   sbatch /project/farman_s25abt480/SLURM_SCRIPTS/BuscoSingularity.sh Pr88168_final.fasta
+```
+This gave me a BUSCO score of 98.4% and 98.8% if including fragmentation with the complete portion
 
 
 
