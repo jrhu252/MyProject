@@ -6,11 +6,15 @@ Will go through and fix steps with actual code
 ```bash
    scp ngs lab 
 ```
-2. Initial count of total sequence reads in raw read data.
+## First I needed to assess the quality and trim of the sequence data I was working with
+
+1. Initial count of the total number of sequence reads in the raw read data
 ```bash
-   
+   awk 'NR % 4 == 2 {s++} END {print s}' Pr88168_1.fq
 ```
-3. Assess sequence quality of raw read data using FASTQC.
+This gave me a total of 9,078,004 raw reads (single end)
+
+2. Assess sequence quality of raw read data using FASTQC.
 ```bash
    fastqc Pr88168_1.fq.gz Pr88168_2.fq.gz
 ```
