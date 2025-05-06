@@ -23,6 +23,7 @@ This gave me a total of 9,078,004 raw reads (single end)
    <img src="images/raw_forward_qual.png" width="450" height="350">
    <img src="images/raw_reverse_qual.png" width="450" height="350">
 </p>
+
 ## Adaptor content for raw forward and reverse reads
 <p float="middle">
    <img src="images/raw_foward_adapt.png" width="450" height="350">
