@@ -93,7 +93,7 @@ Luckily, my professor provided two perl scrips to make this process much easier 
 ```
 This gave me a BUSCO score of 98.4% and 98.8% if including fragmentation with the complete portion
 
-## Now that the genome is fully assembled and appears accurate. I can analyze it using tools like BLAST and SNAP
+## Now that the genome is fully assembled and appears accurate. I can analyze it using tools such as BLAST
 
 1. First, I need to download the MoMitochondrion.fasta file to have something to compare my sequence with and find mitochondrial sequences
 
@@ -110,10 +110,21 @@ This gave me a BUSCO score of 98.4% and 98.8% if including fragmentation with th
 ```
 This allows us to easily view the contigs we found to contain or heavily match up to mitochondrial sequences
 
+## Now we can move on and try to predict the number of proteins found in the genome using tools like SNAP, AUGUSTUS, and MAKER
 
+1. Firstly, we will use SNAP with a given paramter file and our genome's sequence to see if there are any matches
 
+```bash
+   snap-hmm Moryzae.hmm Pr88168_final.fasta -gff > Pr88168-snap.gff2
+```
+2. Next, we can use AUGUSTUS which does a similar thing to SNAP but will give us a much more feature rich and easier to understand output
 
-
+```bash
+   augustus --species=magnaporthe_grisea --gff3=on \
+   --singlestrand=true --progress=true \
+   ../snap/Pr88168_final.fasta > Pr88168-augustus.gff3
+```
+3. Finally, we can use MAKER to predict proteins
 
 
 
