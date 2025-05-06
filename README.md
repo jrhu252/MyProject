@@ -18,12 +18,12 @@ This gave me a total of 9,078,004 raw reads (single end)
 ```bash
    fastqc Pr88168_1.fq.gz Pr88168_2.fq.gz
 ```
-##Quality score for raw forward and reverse reads
+## Quality score for raw forward and reverse reads
 <p float="middle">
    <img src="images/raw_forward_qual.png" width="450" height="350">
    <img src="images/raw_reverse_qual.png" width="450" height="350">
 </p>
-##Adaptor content for raw forward and reverse reads
+## Adaptor content for raw forward and reverse reads
 <p float="middle">
    <img src="images/raw_foward_adapt.png" width="450" height="350">
    <img src="images/raw_reverse_adapt.png" width="450" height="350">
