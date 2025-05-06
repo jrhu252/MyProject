@@ -65,7 +65,7 @@ These graphs show I am working with a fairly high quality sequence but there is 
 
 Comparing these results from our previous FASTQC of the raw reads we can see a significant decrease in adpator content in the forward and reverse reads which also improves the quality of the overall sequence
 
-6. Transfer trimmed Pr88168 paired reads to MCC.
+6. Finally, I will transfer the trimmed Pr88168 paired reads to the Morgan Compute Cluster for more intensive operations
 ```bash
    scp jrhu252@jrhu252.cs.uky.edu:MyGenome/Pr88168_paired_1.fq.gz .(MCC/jrhu252 Directory)
    scp jrhu252@jrhu252.cs.uky.edu:MyGenome/Pr88168_paired_2.fq.gz .(MCC/jrhu252 Directory)
