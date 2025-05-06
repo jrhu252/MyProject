@@ -1,6 +1,4 @@
-# MyGenome Project
-
-Will go through and fix steps with actual code
+# Assembling and analyzing a Pr88168 genome
 
 1. Retrieve sequence reads for project.
 ```bash
