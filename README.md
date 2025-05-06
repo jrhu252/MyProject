@@ -4,9 +4,9 @@ Will go through and fix steps with actual code
 
 1. Retrieve sequence reads for project.
 ```bash
-   scp ngs lab 
+   scp ngs lab for my genome
 ```
-## First I needed to assess the quality and trim of the sequence data I was working with
+## First I need to assess the quality and trim of the sequence data I am working with
 
 1. Initial count of the total number of sequence reads in the raw read data
 ```bash
@@ -14,37 +14,48 @@ Will go through and fix steps with actual code
 ```
 This gave me a total of 9,078,004 raw reads (single end)
 
-2. Assess sequence quality of raw read data using FASTQC.
+2. Assess sequence quality of raw read data using FASTQC
 ```bash
    fastqc Pr88168_1.fq.gz Pr88168_2.fq.gz
 ```
-<h2>Quality score for raw forward and reverse reads.</h2>
+##Quality score for raw forward and reverse reads
 <p float="middle">
    <img src="images/raw_forward_qual.png" width="450" height="350">
    <img src="images/raw_reverse_qual.png" width="450" height="350">
 </p>
-<h2>Adaptor content for raw forward and reverse reads.</h2>
+##Adaptor content for raw forward and reverse reads
 <p float="middle">
    <img src="images/raw_foward_adapt.png" width="450" height="350">
    <img src="images/raw_reverse_adapt.png" width="450" height="350">
 </p>
 
-4. Retrieve adaptor file needed to trim adaptor content.
+These graphs show I am working with a fairly high quality sequence but there is a high amount of adaptor content towards the end that needs to be trimmed
+
+3. Retrieve the adaptor file needed to trim adaptor content from the sequence
 ```bash
-   scp for adaptors.fasta
+   scp ngs lab for adaptors.fasta
 ```
-5. Trim reads to address high adapter content using trimmomatic.
+4. Now I can trim the reads using trimmomatic to address the high adapter content
 ```bash
-   trim bash
+   java -jar trimmomatic-0.38.jar PE -threads 2 -phred33 -trimlog Pr88168_errorlog.txt
+   Pr88168_1.fq.gz
+   Pr88168_2.fq.gz
+   Pr88168_1_paired.fq
+   Pr88168_1_unpaired.fq
+   Pr88168_2_paired.fq
+   Pr88168_2_unpaired.fq
+   ILLUMINACLIP:adaptors.fa:2:30:10 SLIDINGWINDOW:20:20 MINLEN:100
 ```
-6. Assess sequence quality of the trimmed paired reads using FASTQC.
+5. Next I will assess the sequence quality of the trimmed paired reads using FASTQC
 ```bash
    fastqc Pr88168_paired_1.fq.gz Pr88168_paired_2.fq.gz
 ```
 
-7. Transfer trimmed Pr88168 paired reads to MCC.
+6. Transfer trimmed Pr88168 paired reads to MCC.
 ```bash
    scp jrhu252@jrhu252.cs.uky.edu:MyGenome/Pr88168_paired_1.fq.gz .(MCC/jrhu252 Directory)
    scp jrhu252@jrhu252.cs.uky.edu:MyGenome/Pr88168_paired_2.fq.gz .(MCC/jrhu252 Directory)
 ```
+## Now with the sequence properly trimmed and in the right place I can assemble the genome
 
+1. 
