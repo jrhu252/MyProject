@@ -51,6 +51,19 @@ These graphs show I am working with a fairly high quality sequence but there is 
 ```bash
    fastqc Pr88168_paired_1.fq.gz Pr88168_paired_2.fq.gz
 ```
+## Quality score for trimmed forward and reverse reads
+<p float="middle">
+   <img src="images/trimmed_quality_1.png" width="450" height="350">
+   <img src="images/trimmed_quality_2.png" width="450" height="350">
+</p>
+
+## Adaptor content for trimmed forward and reverse reads
+<p float="middle">
+   <img src="images/adaptor_content_1.png" width="450" height="350">
+   <img src="images/adaptor_content_2.png" width="450" height="350">
+</p>
+
+Comparing these results from our previous FASTQC of the raw reads we can see a significant decrease in adpator content in the forward and reverse reads which also improves the quality of the overall sequence
 
 6. Transfer trimmed Pr88168 paired reads to MCC.
 ```bash
