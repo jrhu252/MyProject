@@ -70,4 +70,27 @@ Comparing these results from our previous FASTQC of the raw reads we can see a s
 ```
 ## Now with the sequence properly trimmed and in the right place I can assemble the genome
 
-1. 
+1. First, I assemble the genome using Velvet or more specifically VelvetOptimiser which automates the tedious task of trying to find the most accurate k-mer value possible. 
+
+```bash
+   sbatch velvetoptimiser_noclean.sh Pr88168 89 109 2
+```
+This gave me an optimal k-mer value of 97 and more importantly an assembled genome
+
+2. Next, I want to rename the sequence headers to be more easily understood and remove sequences that are < 200 nt in length
+
+Luckily, my professor provided two perl scrips to make this process much easier for us:
+```bash
+   perl SimpleFastaHeaders.pl  Pr88168.fasta Pr88168
+   perl CullShortContigs.pl Pr88168_nh.fasta
+   perl SeqLen.pl Pr88168_final.fasta
+```
+
+
+
+
+
+
+
+
+
