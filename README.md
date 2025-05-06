@@ -93,6 +93,29 @@ Luckily, my professor provided two perl scrips to make this process much easier 
 ```
 This gave me a BUSCO score of 98.4% and 98.8% if including fragmentation with the complete portion
 
+## Now that the genome is fully assembled and appears accurate. I can analyze it using tools like BLAST and SNAP
+
+1. First, I need to download the MoMitochondrion.fasta file to have something to compare my sequence with and find mitochondrial sequences
+
+```bash
+   blastn -query MoMitochondrion.fasta -subject Pr88168_nh.fasta -evalue 1e-50
+   -max_target_seqs 20000 -outfmt '6 qseqid sseqid slen length qstart qend sstart send btop'
+   -out MoMitochondrion.Pr88168.BLAST
+```
+
+2. Now, I can export a list of those contigs comprising of mostly mitochondrial sequences to their own csv file
+
+```bash
+   awk '$4/$3 > 0.9 {print $2 ",mitochondrion"}' MoMitochondrion.Pr88168.BLAST > Pr88168_mitochondrion.csv
+```
+This allows us to easily view the contigs we found to contain or heavily match up to mitochondrial sequences
+
+
+
+
+
+
+
 
 
 
